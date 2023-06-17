@@ -1,0 +1,25 @@
+{
+  "name": "ssaback",
+  "version": "1.0.0",
+  "description": "Backend SSA",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rimplstilckin/ssaBack.git"
+  },
+  "keywords": [
+    "ssa",
+    "backend",
+    "node.js"
+  ],
+  "author": "Milos Protic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rimplstilckin/ssaBack/issues"
+  },
+  "homepage": "https://github.com/Rimplstilckin/ssaBack#readme"
+}
