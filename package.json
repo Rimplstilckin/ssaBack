@@ -21,5 +21,11 @@
   "bugs": {
     "url": "https://github.com/Rimplstilckin/ssaBack/issues"
   },
-  "homepage": "https://github.com/Rimplstilckin/ssaBack#readme"
+  "homepage": "https://github.com/Rimplstilckin/ssaBack#readme",
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }
