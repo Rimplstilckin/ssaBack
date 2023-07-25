@@ -1,8 +1,18 @@
 const express = require('express');
-const bodyParser = rewuire('body-parser');
+const bodyParser = require('body-parser');
 
 const app = express();
 
-app.use(bodyParser.urlencode({extended: false}));
+const adminRoutes = require('./routes/admin');
+const shopRoutes = require('./routes/shop');
+
+app.use(bodyParser.urlencoded({extended: false}));
+
+app.use('/admin', adminRoutes);
+app.use(shopRoutes);
+
+app.use((req, res, next) => {
+    res.status(404).send('<h1>Page 404</h1>');
+});
 
 app.listen(8080);
