@@ -1,9 +1,8 @@
-const http = require('http');
-
 const express = require('express');
+const bodyParser = rewuire('body-parser');
 
 const app = express();
 
-const server = http.createServer(app);
+app.use(bodyParser.urlencode({extended: false}));
 
-server.listen(8080);
+app.listen(8080);
